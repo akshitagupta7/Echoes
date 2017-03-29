@@ -2,3 +2,10 @@
 			from index.html nav bar
 			<p><a class="btn btn-default" href="#" role="button">More &raquo;</a></p>
 			from vijay nagar circle
+			
+			
+			in bootstrap.css
+			.container{
+			 padding-right: 15px;
+  padding-left: 15px;
+  }
