@@ -1,0 +1,4 @@
+            <li><a href="#contact">Contact Us</a></li>
+			from index.html nav bar
+			<p><a class="btn btn-default" href="#" role="button">More &raquo;</a></p>
+			from vijay nagar circle
