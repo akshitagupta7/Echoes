@@ -1,12 +1,25 @@
-* {
-    margin:0;
-    padding:0;
-  }
+
   .navbar-wrapper{
-      margin-top: -40px;
+       top=0;
+      padding-top: 0;
+      margin: 0;
+      background-color: blue;
   }
   #nava{
-            background: rgba(34, 34, 34, 0.5);
+            background: rgba(34, 34, 34, 0.8);
             margin-top: 0px;
-
   }
+  .container .navbar {
+      margin:0;
+  }
+  .nav li{
+      margin: 0;
+      top:0;
+  }
+body{
+    margin:0;
+}
+#myCarousel{
+    margin-top: -20px;
+}
+  
