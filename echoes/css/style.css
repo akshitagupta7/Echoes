@@ -1,9 +1,6 @@
 
-  .navbar-wrapper{
-       top=0;
-      padding-top: 0;
-      margin: 0;
-      background-color: blue;
+  #width-full{
+      width: 100%;
   }
   #nava{
             background: rgba(34, 34, 34, 0.8);
