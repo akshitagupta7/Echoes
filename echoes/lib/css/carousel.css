@@ -140,3 +140,60 @@ body {
     margin-top: 120px;
   }
 }
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+.carousel-inner > .item > img {
+height: 400px;
+}
+.carousel{
+  height: 400px;
+}
+.carousel .item {
+  height: 400px;
+}
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+.carousel-inner > .item > img {
+height: 350px;
+}
+.carousel{
+  height: 350px;
+}
+.carousel .item {
+  height: 350px;
+}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+.carousel-inner > .item > img {
+height: 300px;
+}
+.carousel{
+  height: 300px;
+}
+.carousel .item {
+  height: 300px;
+}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+.carousel-inner > .item > img {
+height: 200px;
+}
+.carousel{
+  height: 200px;
+}
+.carousel .item {
+  height: 200px;
+}
+}
