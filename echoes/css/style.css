@@ -44,7 +44,28 @@ color:white;}
 
 .lead{
 	font-size:18px;
-	margin:0px;
 	
+	
+}
+
+.img-square{
+	 position: absolute;
+  left:0;
+  
+  
+  
+}
+
+.mycontainer{
+  position: relative;
+}
+
+#mytext{
+	 z-index: 100;
+    position: relative;
+    top:20px;
+
+  font-weight: bold;
+ 
 }
 

@@ -79,3 +79,34 @@
   home page pr echoes active nahi aa rha
   spacing aa rhi h joki sahi nahi ho rhi slider aur grid ke beech
   footer mai bhi side mai padding aa rhi h joki patanahi kidhrse aa rhi h
+  
+  
+  
+  
+  
+   <!-- FOOTER -->
+      <footer>
+	   <div class="container panel-footer">
+	   <div class="col-lg-6">
+        <h4 class="text-muted">Contact us</h4>
+		<ul style="list-style:none">
+		<li>Business E-mail</li>
+		<ul><li>email@email.com</li></ul>
+		<li>Phone</li>
+		<ul><li>987654321</li></ul>
+		</ul>
+      </div>
+	  <div class="col-lg-6">
+	  <h4 class="text-muted">About Us</h4>
+	  <ul style="list-style:none">
+	  <li><a href="#">History</a></li>
+	  <li><a href="#">News</a></li>
+	  <li><a href="#">Events</a></li>
+	  </ul>
+	  </div>
+	  
+      </footer>
+	  
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p id="pulled">&copy; 2017 Echoes, Inc. &middot; <a href="#">Contact Us</a> &middot; <a href="#">About Us</a></p> 
+		</div>
