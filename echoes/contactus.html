@@ -17,6 +17,9 @@
     <link href="css/contact_style.css" rel="stylesheet">
    
     <link href="lib/css/carousel.css" rel="stylesheet">
+	
+    <!-- Custom styles for this template -->
+    <link href="lib/css/signin.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 <!-- NAVBAR
@@ -49,21 +52,44 @@
       </div>
     </nav>
 
+    <div class="container">
+<div class="col-md-6">
+      <form class="form-signin" id="register" action="register.php" method="POST">
+        <h2 class="form-signin-heading">Have A Message?</h2>
+		 <h3 class="form-signin-heading">Please Leave Your Details</h3>
+        <label for="inputName" class="sr-only">Name</label>
+        <input type="name" name="name" id="inputName" class="form-control" placeholder="Name" required autofocus><br>
+		  <label for="inputEmail" class="sr-only">Email address</label>
+		 <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required><br>
+		 <textarea type="text" name="query" id="QueryBox" class="form-control" placeholder="Enter Query" required></textarea><br>
+       <!-- <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div> -->
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+		</div><div class="col-md-6">
+      </form>
+	  <form class="form-signin" id="register" action="register.php" method="POST">
+        <h2 class="form-signin-heading">Looking For A Job Opportunity?</h2>
+        <label for="inputName" class="sr-only">Name</label>
+        <input type="name" name="name" id="inputName" class="form-control" placeholder="Name" required autofocus><br>
+		  <label for="inputEmail" class="sr-only">Email address</label>
+		 <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+         <h3 class="form-signin-heading">Why Should We Hire You?</h3>
+		  <textarea type="text" name="message" id="MessageBox" class="form-control" placeholder="Enter Message" rows="5" required></textarea><br>
+       <!-- <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div> -->
+       <h3 class="form-signin-heading">Upload Your Resume</h3> <button class="btn btn-lg btn-primary btn-block" id="mybutton" type="submit">Upload</button>
+      </form>
+</div>
+    </div> <!-- /container -->
 
 
-<div id="header-img">
-  <div class="container">
-    <div class="jumbotron" id="myjumbo">
-      <h1>Contact Us</h1>
-    </div></div>
-  
-  </div>
-
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="lib/js/bootstrap.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
-
 </html>
