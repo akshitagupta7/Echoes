@@ -1,0 +1,37 @@
+body{
+    background: url('../../website-creative.png')
+}
+#head {
+        margin-top: 60px;
+        text-align: center;
+    font-family: 'Spirax', cursive;
+    color: white;
+    font-size: 800%;
+
+}
+#event-component{
+    margin-top: 60px;
+    background: #e3e3e3;
+    min-height: 450px;
+}
+#img-component{
+    min-height:200px;
+    background:url('http://www.freewordpressheaders.com/wp-content/gallery/food-gallery/burger-sandwich-header.jpg');
+}
+#heading-component h2{
+    color: black;
+    margin-left: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+#text-component p{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.mybutton {
+    text-align: center;
+display: block;
+   margin: 0 auto;
+
+}
