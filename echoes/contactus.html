@@ -53,23 +53,39 @@
     </nav>
 
     <div class="container">
-
-      <form class="form-signin">
+<div class="col-md-6">
+      <form class="form-signin" id="register" action="register.php" method="POST">
         <h2 class="form-signin-heading">Have A Message?</h2>
 		 <h3 class="form-signin-heading">Please Leave Your Details</h3>
         <label for="inputName" class="sr-only">Name</label>
-        <input type="name" id="inputName" class="form-control" placeholder="Name" required autofocus><br>
+        <input type="name" name="name" id="inputName" class="form-control" placeholder="Name" required autofocus><br>
 		  <label for="inputEmail" class="sr-only">Email address</label>
-		 <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required><br>
-		 <textarea type="text" id="QueryBox" class="form-control" placeholder="Enter Query" required></textarea><br>
+		 <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required><br>
+		 <textarea type="text" name="query" id="QueryBox" class="form-control" placeholder="Enter Query" required></textarea><br>
        <!-- <div class="checkbox">
           <label>
             <input type="checkbox" value="remember-me"> Remember me
           </label>
         </div> -->
         <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+		</div><div class="col-md-6">
       </form>
-
+	  <form class="form-signin" id="register" action="register.php" method="POST">
+        <h2 class="form-signin-heading">Looking For A Job Opportunity?</h2>
+        <label for="inputName" class="sr-only">Name</label>
+        <input type="name" name="name" id="inputName" class="form-control" placeholder="Name" required autofocus><br>
+		  <label for="inputEmail" class="sr-only">Email address</label>
+		 <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+         <h3 class="form-signin-heading">Why Should We Hire You?</h3>
+		  <textarea type="text" name="message" id="MessageBox" class="form-control" placeholder="Enter Message" rows="5" required></textarea><br>
+       <!-- <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div> -->
+       <h3 class="form-signin-heading">Upload Your Resume</h3> <button class="btn btn-lg btn-primary btn-block" id="mybutton" type="submit">Upload</button>
+      </form>
+</div>
     </div> <!-- /container -->
 
 
