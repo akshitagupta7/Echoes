@@ -1,0 +1,11 @@
+#header-img {
+ background: url('../imgs/contact-us.jpg');
+    background-repeat:no-repeat;
+    background-position: top center;
+    background-size: 100%;
+    height: 500px;
+}
+#myjumbo {
+    background-color: green;
+
+}
