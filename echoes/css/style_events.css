@@ -1,5 +1,9 @@
 body{
-    background: url('../../website-creative.png')
+    background: url('../../website-creative.jpg') no-repeat center fixed;
+     -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #head {
         margin-top: 60px;
@@ -7,6 +11,7 @@ body{
     font-family: 'Spirax', cursive;
     color: white;
     font-size: 800%;
+    background: rgba(34, 34, 34, 0.5);
 
 }
 #event-component{
@@ -16,7 +21,14 @@ body{
 }
 #img-component{
     min-height:200px;
-    background:url('http://www.freewordpressheaders.com/wp-content/gallery/food-gallery/burger-sandwich-header.jpg');
+  
+}
+.waffle{
+      background:url('../events/imgs/waffle.jpg') no-repeat center;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #heading-component h2{
     color: black;
