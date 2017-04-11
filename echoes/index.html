@@ -14,6 +14,18 @@
     <!-- Bootstrap core CSS -->
     <link href="lib/css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+<script type="text/javascript">
+function is_mobile() {
+    var agents = ['android', 'webos', 'iphone', 'ipad', 'blackberry'];
+    for(i in agents) {
+        if(navigator.userAgent.match('/'+agents[i]+'/i')) {
+            return true;
+        }
+    }
+    return false;
+}
+</script>
+
 
    
     <link href="lib/css/carousel.css" rel="stylesheet">
@@ -59,10 +71,13 @@
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="http://www.freewordpressheaders.com/wp-content/gallery/food-gallery/burger-sandwich-header.jpg" alt="First slide">
+          <img class="first-slide" src="imgs/carousel/IMG_2257.jpg" alt="First slide">
           <div class="container">
             <!--<div class="carousel-caption">
               <h1>Headline</h1>
@@ -75,7 +90,7 @@
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="http://detox-fit.com/wp-content/uploads/2015/06/food-header.jpg" alt="Second slide">
+          <img class="second-slide" src="imgs/carousel/2.jpg" alt="Second slide">
           <div class="conainer" id="width_full"> 
             <!--<div class="carousel-caption">
               <h1>Headline.</h1>
@@ -84,12 +99,30 @@
           </div>
         </div>
         <div class="item">
-          <img class="third-slide" src="http://prestofoods.com/wp-content/uploads/2014/07/header-about.jpg" alt="Third slide">
+          <img class="third-slide" src="imgs/carousel/3.jpg" alt="Third slide">
           <div class="container">
            <!-- <div class="carousel-caption">
               <h1>Headline</h1>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Check Out Events</a></p>
             </div> -->
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="imgs/carousel/4.jpg" alt="Second slide">
+          <div class="conainer" id="width_full"> 
+            <!--<div class="carousel-caption">
+              <h1>Headline.</h1>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Know About Us</a></p>
+            </div>-->
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="imgs/carousel/5.jpg" alt="Second slide">
+          <div class="conainer" id="width_full"> 
+            <!--<div class="carousel-caption">
+              <h1>Headline.</h1>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Know About Us</a></p>
+            </div>-->
           </div>
         </div>
       </div>
@@ -113,18 +146,18 @@
       <!-- Three columns of text below the carousel -->
       <div class="row no-gutter mycontainer">
         <div class="col-lg-4 col-sm-4">
-          <img class="img-square" src="imgs/ad_satya.png" alt="Generic  image" width=100% height="250">
+          <img class="img-square" src="imgs/ad_satya.png" alt="Generic  image" width=100% ">
           
 		  <span id="mytext"><h2 id="mylead"></h2><br>
           <p></p></span><!-- format mylead class according to the images-->
         </div>
         <div class="col-lg-4 col-sm-4">
-          <img class="img-square" src="imgs/ad_bang.png" alt="Generic placeholder image" width=100% height="250">
+          <img class="img-square" src="imgs/ad_bang.png" alt="Generic placeholder image" width=100% >
           <span id="mytext"><h2 id="mylead"></h2><br>
           <p></p></span>
         </div>
         <div class="col-lg-4 col-sm-4">
-          <img class="img-square" src="http://www.ktua.com/blog/wp-content/uploads/2014/09/coming-soon-curtains.png" alt="Generic placeholder image" width=100% height="250">
+          <img class="img-square" src="http://www.ktua.com/blog/wp-content/uploads/2014/09/coming-soon-curtains.png" alt="Generic placeholder image" width=100% >
          <span id="mytext"> <h2 id="mylead">Hudson Lane</h2>
           <h3>Coming Soon!!</h3></span>
           
@@ -138,12 +171,44 @@
 </div>
     </div><!-- /.container -->
 
+    <div class="footer">
+      <div class="container">
+<h3 id="head_foot">About Echoes</h3>
+      Conceptual restaurants serve more than just food on the platter. They serve a vision, an idea and garnish its uniqueness. Echoes is one such unique café which  is a distinctive restaurant which is managed by deaf and mute staff and implements techniques which are not common in the industry. ECHOES makes it to the league of ideas which live duly upto its professional and social responsibility.
+<br><br>
 
+It’s not just the concept of Echoes which is unique, so is its food and ambience. It is a hub where you can relish the best of various Continental, Italian, Mexican, Chinese and American delicacies served with a fusion twist. With sumptuous food, a soul-comforting ambience and a unique concept; Echoes stands at the peak in the league of its own.
+<br><br>
+The goal of the team is to make ECHOES a café which is completely managed by deaf and mute staff and create an avenue where the specially ables staff  can work with next level confidence. This goal will soon be attained as the walk towards the destiny has already begun. With Echoes recently opening in Bangalore, the expansion of the objective has begun. Soon, Echoes will be heard all around.
+<br><br>
+So far Echoes has made all the right sounds and has been accepted and appreciated all over the country with various media platforms spreading the word of goodness for Echoes. The best thing about the café is the amount of confidence it provides to its staff. It reforms the staff-customer relationship in a very different and positive way.
+      <br><br><form class="form-inline"><p class="align-right"><b>Locate Us(<a target="_blank" href="https://goo.gl/maps/XT6iDMKBtnv">Bangalore</a> /<a target="_blank" href="https://www.google.co.in/maps/place/Echoes+-+Eat+Engage+Energize/@28.587608,77.1647683,17z/data=!3m1!4b1!4m5!3m4!1s0x390d1d13c8f06bb1:0x5a7b99fe064ccfa5!8m2!3d28.587608!4d77.166957"> Satyaniketan</a>)</a></b></p>
+  <div class="form-group">
+    <input type="text" class="form-control" id="exampleInputName2" placeholder="Mobile Number">
+  </div>
+  <button type="submit" class="btn btn-default">Subscribe to our Feed</button>
+</form>      
+
+      </div>
+    </div>
+
+
+    
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    if ($(window).width()<500) {
+      $("body").css("padding-top","85px");
+      $("#nava").css("background","rgb(34, 34, 34)");
+    //Mobile device detected. Do some stuff...
+}
+
+  });
+</script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="lib/js/bootstrap.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->

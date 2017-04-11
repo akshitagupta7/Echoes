@@ -189,12 +189,12 @@ height: 300px;
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
 .carousel-inner > .item > img {
-height: 400px;
+height: 300px;
 }
 .carousel{
-  height: 400px;
+  height: 300px;
 }
 .carousel .item {
-  height: 400px;
+  height: 300px;
 }
 }
