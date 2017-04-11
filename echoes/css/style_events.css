@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'echoes_font';
+    src: url("../fonts/font.ttf") ;
+}
 body{
     background: url('../imgs/website-creative.jpg') no-repeat center fixed;
      -webkit-background-size: cover;
@@ -8,7 +12,7 @@ body{
 #head {
         margin-top: 60px;
         text-align: center;
-    font-family: 'Spirax', cursive;
+    font-family: 'echoes_font', cursive;
     color: white;
     font-size: 800%;
     background: rgba(34, 34, 34, 0.5);
