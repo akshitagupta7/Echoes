@@ -34,8 +34,7 @@ body{
 
 .flip-container, .front, .back {
 	
-	
-	padding:2px;
+
 }
 
 /* flip speed goes here */
@@ -44,7 +43,6 @@ body{
 	transform-style: preserve-3d;
 	position: relative;
 	height:250px;
-	border:1px solid black;
 	background-color:white;
 }
 
@@ -84,6 +82,7 @@ body{
 height:200px;
 }	
 p{
+	padding:3px;
 	font-family: 'Amaranth', sans-serif;
 	font-size:15px;
 }
