@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Wheel of Fortune </title>
+    <style type="text/css">
+    text{
+        font-family:Helvetica, Arial, sans-serif;
+        font-size:11px;
+        pointer-events:none;
+    }
+	body{
+     background:green;
+	 background-repeat:no-repeat fixed;
+	background-size:cover;
+	background-position:top;
+	}
+    #chart{
+        position:absolute;
+        width:500px;
+        height:500px;
+        top:0%;
+        left:2%;
+    }
+    #question{
+        position: absolute;
+        width:400px;
+        height:500px;
+        top:0;
+        left:520px;
+	    color:white;
+	
+    }
+    #question h1{
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        top:50%;
+        -webkit-transform:translate(0,-50%);
+                transform:translate(0,-50%);
+    }
+	button{background-color:black;
+	color:white;
+	padding:25px;
+	border-width:3px;
+	border-style:dashed;
+	font-weight:bold;
+	position:absolute;
+	top:80%;
+	left:85%;
+	}
+	a:link{color:white;}
+	a:visited{color:white;}
+	
+
+    </style>
+    
+</head>
+<body>
+    <div id="chart"></div>
+    <div id="question"><h1></h1></div>
+    
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+        var padding = {top:10, right:40, bottom:0, left:0},
+            w = 610 - padding.left - padding.right,
+            h = 610 - padding.top  - padding.bottom,
+            r = Math.min(w, h)/2,
+            rotation = 0,
+            oldrotation = 0,
+            picked = 100000,
+            oldpick = [],
+            color = d3.scale.category20();//category20c()
+            //randomNumbers = getRandomNumbers();
+
+        //http://osric.com/bingo-card-generator/?title=HTML+and+CSS+BINGO!&words=padding%2Cfont-family%2Ccolor%2Cfont-weight%2Cfont-size%2Cbackground-color%2Cnesting%2Cbottom%2Csans-serif%2Cperiod%2Cpound+sign%2C%EF%B9%A4body%EF%B9%A5%2C%EF%B9%A4ul%EF%B9%A5%2C%EF%B9%A4h1%EF%B9%A5%2Cmargin%2C%3C++%3E%2C{+}%2C%EF%B9%A4p%EF%B9%A5%2C%EF%B9%A4!DOCTYPE+html%EF%B9%A5%2C%EF%B9%A4head%EF%B9%A5%2Ccolon%2C%EF%B9%A4style%EF%B9%A5%2C.html%2CHTML%2CCSS%2CJavaScript%2Cborder&freespace=true&freespaceValue=Web+Design+Master&freespaceRandom=false&width=5&height=5&number=35#results
+
+        var data = [
+                    {"label":"Ques 1",  "value":1,  "question":"You are given a 6 by 6 grid and asked to start on the top left corner.Now your aim is to get to the bottom right corner.You are only allowed to move either right or down. You must never move diagonally or backwards.How many feasible ways are there for you to reach the end point?"}, //252
+                    {"label":"Ques 2",  "value":1,  "question":"There are 100 bulbs lined up in a room. All are turned on in the first pass. Then all the even numbered light bulbs are switched off. After that, every third bulb is switched on. Then all those bulbs that were switched off are turned back on and all those that were lit are turned off.Then the same process is being carried with the fourth bulb and the fifth bulb.How many bulbs are glowing after 100 passes?"}, //10
+                    {"label":"Ques 3",  "value":1,  "question":"You are given with a cube with a three by three grid. Suppose you are standing on the back left corner of the cube and you are supposed to reach the front right of the cube. You are free to move towards the front, downwards or upwards.How many ways are there that will take you to the end."}, //90
+                    {"label":"Ques 4",  "value":1,  "question":"Birbal is a witty trader who trade of a mystical fruit grown far in north. He travels from one place to another with three sacks which can hold 30 fruits each. None of the sack can hold more than 30 fruits. On his way, he has to pass through thirty check points and at each check point, he has to give one fruit for each sack to the authorities.How many mystical fruits remain after he goes through all the thirty check points?"}, //25
+                    {"label":"Ques 5",  "value":1,  "question":"Assuming i have an infinite supply of coins.What is the fewest number of coins would be required in order to make sure each and every coin touched exactly three other coins."}, //4
+                    {"label":"Ques 6",  "value":1,  "question":"Six new FBI recruits at the Quantico base in Virginia. There was a bomb blast new the base and it's a known fact that one of the following new recruits is a terrorist and is planning for years for this blast.1.Alex Parrish 2.Ryan Booth 3.Miranda Shaw 4.Nimah Amin 5.Shelby Wyatt 6.Simon Asher.From a 100% reliable source they received an encrypted message.Alex Parrish read the message and arrest the Nimah Amin.The message was 'tstimeirorwatchretehourhtsisecondsnidialma'Can you decode the message?"}, //Amin is the terrorist
+                    {"label":"Ques 7",  "value":1,  "question":"X is a multinational computer technology company, which is among the very few companies to have had only one CEO ever since its inception.X also sued Google in 2010 for using Java APIs in their Android systems without consent. X's CEO has had open enimity with Microsoft and Bill Gates. X's CEO claims that if the internet turns out not to be the future of computing, we're toast. But if it is, we're golden. Identify X."}, //oracle
+                    {"label":"Ques 8",  "value":1,  "question":"Who is the COO of fb?"}, //sheryl sandberg
+                    {"label":"Ques 9",  "value":1,  "question":"On a magical-intellectual land of gpuzzles,all the animal are rational(real smart).There are six leopards and one sheep.Leopard can eat sheep but since as the land is magical,the leopards who eats the sheep,turns into sheep and then can be eaten by the remaining leopard(s).If we leave them for some time then how many sheep and leopard will be there,when we come back?(Answer as: Number of leopards, Number of sheeps) "}, //5,1
+                    {"label":"Ques 10", "value":1, "question":""}, //
+                    {"label":"Ques 11", "value":1, "question":""}, //
+                    {"label":"Ques 12", "value":1, "question":""}, //
+                    {"label":"Ques 13", "value":1, "question":""}, //
+                    {"label":"Ques 14", "value":1, "question":""}, //
+                    {"label":"Ques 15", "value":1, "question":""}, //
+                    {"label":"Ques 16", "value":1, "question":""}, //
+                    {"label":"Ques 17", "value":1, "question":""}, //
+                    {"label":"Ques 18", "value":1, "question":""}, //
+                    {"label":"Ques 19", "value":1, "question":""}, //
+                    {"label":"Ques 20", "value":1, "question":""}, //
+                    {"label":"Ques 21", "value":1, "question":""}, //
+                    {"label":"Ques 22", "value":1, "question":""}, //
+                    {"label":"Ques 23", "value":1, "question":""}, //
+                    {"label":"Ques 24", "value":1, "question":""}, //
+                    {"label":"Ques 25", "value":1, "question":""}, //
+                    {"label":"Ques 26", "value":1, "question":""}, //
+                    {"label":"Ques 27", "value":1, "question":""}, //
+                    {"label":"Ques 28", "value":1, "question":""},//
+                    {"label":"Ques 29", "value":1, "question":""}, //
+                    {"label":"Ques 30", "value":1, "question":""}, //
+					{"label":"Ques 31", "value":1, "question":""}, //
+					{"label":"Ques 32", "value":1, "question":""}, //
+					{"label":"Ques 33", "value":1, "question":""}, //
+					{"label":"Ques 34", "value":1, "question":""}, //
+					{"label":"Ques 35", "value":1, "question":""}, //
+					{"label":"Ques 36", "value":1, "question":""}, //
+					{"label":"Ques 37", "value":1, "question":""}, //
+					{"label":"Ques 38", "value":1, "question":""}, //
+					{"label":"Ques 39", "value":1, "question":""}, //
+					{"label":"Ques 40", "value":1, "question":""}, //
+					{"label":"Ques 41", "value":1, "question":""}, //
+					{"label":"Ques 42", "value":1, "question":""}, //
+					{"label":"Ques 43", "value":1, "question":""}, //
+					{"label":"Ques 44", "value":1, "question":""}, //
+					{"label":"Ques 45", "value":1, "question":""}, //
+					{"label":"Ques 46", "value":1, "question":""}, //
+					{"label":"Ques 47", "value":1, "question":""}, //
+					{"label":"Ques 48", "value":1, "question":""}, //
+					{"label":"Ques 49", "value":1, "question":""}, //
+					{"label":"Ques 50", "value":1, "question":""}, //
+					{"label":"Ques 51", "value":1, "question":""}, //
+					{"label":"Ques 52", "value":1, "question":""}, //
+					{"label":"Ques 53", "value":1, "question":""}, //
+					{"label":"Ques 54", "value":1, "question":""}, //
+					{"label":"Ques 55", "value":1, "question":""}, //
+					{"label":"Ques 56", "value":1, "question":""}, //
+					{"label":"Ques 57", "value":1, "question":""}, //
+					{"label":"Ques 58", "value":1, "question":""}, //
+					{"label":"Ques 59", "value":1, "question":""}, //
+					{"label":"Ques 60", "value":1, "question":""}, //
+			
+				
+				
+					
+					
+		  ];
+
+
+        var svg = d3.select('#chart')
+            .append("svg")
+            .data([data])
+            .attr("width",  w + padding.left + padding.right)
+            .attr("height", h + padding.top + padding.bottom);
+
+        var container = svg.append("g")
+            .attr("class", "chartholder")
+            .attr("transform", "translate(" + (w/2 + padding.left) + "," + (h/2 + padding.top) + ")");
+
+        var vis = container
+            .append("g");
+            
+        var pie = d3.layout.pie().sort(null).value(function(d){return 1;});
+
+        // declare an arc generator function
+        var arc = d3.svg.arc().outerRadius(r);
+
+        // select paths, use arc generator to draw
+        var arcs = vis.selectAll("g.slice")
+            .data(pie)
+            .enter()
+            .append("g")
+            .attr("class", "slice");
+            
+
+        arcs.append("path")
+            .attr("fill", function(d, i){ return color(i); })
+            .attr("d", function (d) { return arc(d); });
+
+        // add the text
+        arcs.append("text").attr("transform", function(d){
+                d.innerRadius = 0;
+                d.outerRadius = r*(99/100);
+                d.angle = (d.startAngle + d.endAngle)/2;
+                return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")translate(" + (d.outerRadius -10) +")";
+            })
+            .attr("text-anchor", "end")
+            .text( function(d, i) {
+                return data[i].label;
+            });
+
+        container.on("click", spin);
+
+
+        function spin(d){
+            
+            container.on("click", null);
+
+            //all slices have been seen, all done
+            console.log("OldPick: " + oldpick.length, "Data length: " + data.length);
+            if(oldpick.length == data.length){
+                console.log("done");
+                container.on("click", null);
+                return;
+            }
+
+            var  ps       = 360/data.length,
+                 pieslice = Math.round(1440/data.length),
+                 rng      = Math.floor((Math.random() * 1440) + 360);
+                
+            rotation = (Math.round(rng / ps) * ps);
+            
+            picked = Math.round(data.length - (rotation % 360)/ps);
+            picked = picked >= data.length ? (picked % data.length) : picked;
+
+
+            if(oldpick.indexOf(picked) !== -1){
+                d3.select(this).call(spin);
+                return;
+            } else {
+                oldpick.push(picked);
+            }
+
+            rotation += 90 - Math.round(ps/2);
+
+            vis.transition()
+                .duration(3000)
+                .attrTween("transform", rotTween)
+                .each("end", function(){
+
+                    //mark question as seen
+                    d3.select(".slice:nth-child(" + (picked + 1) + ") path")
+                        .attr("fill", "#111");
+
+                    //populate question
+                    d3.select("#question h1")
+                        .text(data[picked].question);
+
+                    oldrotation = rotation;
+                
+                    container.on("click", spin);
+                });
+        }
+
+        //make arrow
+        svg.append("g")
+            .attr("transform", "translate(" + (w + padding.left + padding.right) + "," + ((h/2)+padding.top) + ")")
+            .append("path")
+            .attr("d", "M-" + (r*.15) + ",0L0," + (r*.05) + "L0,-" + (r*.05) + "Z")
+            .style({"fill":"black"});
+
+        //draw spin circle
+        container.append("circle")
+            .attr("cx", 0)
+            .attr("cy", 0)
+            .attr("r", 50)
+            .style({"fill":"white","cursor":"pointer"});
+
+        //spin text
+        container.append("text")
+            .attr("x", 0)
+            .attr("y", 15)
+            .attr("text-anchor", "middle")
+            .text("SPIN")
+            .style({"font-weight":"bold", "font-size":"30px"});
+        
+        
+        function rotTween(to) {
+          var i = d3.interpolate(oldrotation % 360, rotation);
+          return function(t) {
+            return "rotate(" + i(t) + ")";
+          };
+        }
+        
+        
+        function getRandomNumbers(){
+            var array = new Uint16Array(1000);
+            var scale = d3.scale.linear().range([360, 1440]).domain([0, 100000]);
+
+            if(window.hasOwnProperty("crypto") && typeof window.crypto.getRandomValues === "function"){
+                window.crypto.getRandomValues(array);
+                console.log("works");
+            } else {
+                //no support for crypto, get crappy random numbers
+                for(var i=0; i < 1000; i++){
+                    array[i] = Math.floor(Math.random() * 100000) + 1;
+                }
+            }
+
+            return array;
+        }
+
+   
+    var interval;
+    var minutes = 45;
+    var seconds = 0;
+    window.onload = function() {
+        countdown('countdown');
+    }
+
+    function countdown(element) {
+        interval = setInterval(function() {
+            var el = document.getElementById(element);
+            if(seconds == 0) {
+                if(minutes == 0) {
+                    el.innerHTML = "countdown's over!";  
+                    alert("countdown's over!");
+                    clearInterval(interval);
+                    return;
+                } else {
+                    minutes--;
+                    seconds = 60;
+                }
+            }
+            if(minutes > 0) {
+                var minute_text = minutes + ':';
+            } else {
+                var minute_text = '';
+            }
+            var second_text = seconds;
+            el.innerHTML ='Count Down: '+ minute_text + ' ' + second_text ;
+            seconds--;
+        }, 1000);
+    }
+    </script>
+	<button><a href="end.html">NEXT</a></button>
+<div id="countdown" style="
+font-size:30px;
+color:white;
+text-decoration:underline;
+text-shadow:4px 4px 4px blue;
+width:260px; height:45px;
+position:fixed;
+left:70%";>
+</div>
+</body>
+</html>
