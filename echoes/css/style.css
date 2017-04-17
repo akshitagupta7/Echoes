@@ -121,14 +121,12 @@ html, body, #info, #stage{
 
 /*.footer{
     min-height: 500px;
-<<<<<<< HEAD
     background-color: #e3e3e3;
 } */
-=======
+
     background: url('../imgs/eee.png');
     /*color: white;*/
 }
->>>>>>> d39c833faa7de680e62a9caee829d9497a6101ff
 #head_foot{
     font-family: 'echoes_font';
 }
