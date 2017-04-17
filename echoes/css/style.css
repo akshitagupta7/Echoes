@@ -5,6 +5,10 @@
   #width-full{
       width: 100%;
   }
+  #navbar a{
+             -webkit-transition: color 0.5s; /* Safari */
+    transition: color 0.5s;
+  }
   #nava{
             background: rgba(34, 34, 34, 0.8);
             margin-top: 0px;
@@ -16,9 +20,13 @@
       margin: 0;
       top:0;
   }
+  
 body{
     margin:0;
 }
+#indexpage{
+    background: url('../imgs/giftly.png');
+    }
 #myCarousel{
     margin-top: -20px;
 }
@@ -112,7 +120,8 @@ html, body, #info, #stage{
 
 .footer{
     min-height: 500px;
-    background-color: #e3e3e3;
+    background: url('../imgs/eee.png');
+    /*color: white;*/
 }
 #head_foot{
     font-family: 'echoes_font';
@@ -120,13 +129,74 @@ html, body, #info, #stage{
 .align-right{
     text-align: right;
     margin-right: 20px;
-    color: black;
+    color: white;
 }
 
+#locate{
+    width: 100%;
+    
+}
+#lower_footer{
+    padding: 50px;
+    background:url('../imgs/footer_lodyas.png');
+}
 
+#footer_head{
+    text-align: center;
+    font-family: echoes_font;
+    font-size: 200%;
+    color: white;
+}
+#link_footer{
+    text-align: center;
+ 
+}
+#link_footer li{
+       -webkit-transition: color 1s; /* Safari */
+    transition: color 1s;
+}
+#link_footer li:hover{
+    color: white;
+}
+.text_index{
+    padding-bottom: 50px;
+    color: black;
+font-family: 'Ubuntu', sans-serif;
 
+}
 
+#offers{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: #e3e3e3;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: border-radius 1s ,width 1s;
 
+}
+#offers:hover{
+    width: 150px;
+    border-radius: 200px;
+ }
+#fb{
+    position: relative;
+    left: 20px;
+    top: 25px;
+    
+}
+#insta{
+    position: relative;
+    left:40px;
+    top:25px;
+}
+#love{
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+
+}
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
@@ -134,7 +204,7 @@ html, body, #info, #stage{
 
 
 
-    /*==========  Mobile First Method  ==========*/
+    /*====== Mobile First Method  ==========*/
 
     /* Custom, iPhone Retina */ 
     @media only screen and (min-width : 320px) {
