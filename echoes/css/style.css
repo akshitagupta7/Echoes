@@ -66,6 +66,7 @@ color:white;}
 .mycontainer .col-lg-4{
     height: 250px;
 }
+
 .mycontainer .img-square{
     height: 250px;
     border: 1px solid black;
@@ -110,10 +111,10 @@ html, body, #info, #stage{
 
 }
 
-.footer{
+/*.footer{
     min-height: 500px;
     background-color: #e3e3e3;
-}
+} */
 #head_foot{
     font-family: 'echoes_font';
 }
