@@ -1,74 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"><!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Concert+One|Pacifico" rel="stylesheet">
 
     <title>Contact Us</title>
 
     <!-- Bootstrap core CSS -->
     <link href="lib/css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/contact_style.css" rel="stylesheet">
-   	
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/map.css" rel="stylesheet">
+   
+
+ 
+    <link href="lib/css/carousel.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      #map {
+        height: 500px;
+        width: 41%;
+       }
+    </style>
   </head>
-<!-- NAVBAR
-================================================== -->
   <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" id="nava">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-		  
-      <ul class="nav navbar-nav top-bar"><a class="navbar-brand" href="index.html">
-		  <i class="fa fa-home fa-lg" aria-hidden="true"></i>Echoes</a></ul>
-		  
-		  
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav top-bar">
-           <li><a href="team.html">Our Team</a></li>
-			<li ><a href="events.html">Events</a></li>
-			<li><a href="news.html">News</a></li>
-			 <li id="myactive"><a href="contactus.html">Contact Us</a></li>
-           
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+  
+  <h1 id="top_new">Contact Us</h1>
+	<div class=" container">
+	<div class="col-md-3">
+	<h1>Opening Timings</h1><hr>
+	<p><span id="format">Monday-Saturday:</span><br>11:00 a.m.-11:00 p.m.<br>
+	<span id="format">Sunday:</span><br>
+	12 p.m.-11:00 p.m. <br><hr>
+	<p><i class="fa fa-map-marker" aria-hidden="true"></i> 17, 1st Floor,SatyaNiketan, Opposite Venkateshwara College,New Delhi<br><hr></p>
+	<p><i class="fa fa-phone" aria-hidden="true"></i> (+91)-9999066108<br><hr></p>
+	<p><i class="fa fa-envelope" aria-hidden="true"></i> contactus@stargazer.co.in</p>
+	</div>
+	<div class="col-md-4">
+	
+	<p id="heading">Follow Us!<br></p>
+	<p>Stay In Contact With Us And Show Your Support</p>
+	<!-- Add font awesome icons -->
+<i class="fa fa-4x fa-facebook-square" aria-hidden="true"></i>
+<a href="#"><img src="imgs/insta.png" width="57" height="57" /></a>
 
-<div id="center">
+	<hr>
+	<p>www.echoes.stargazers.co.in</p>
+	
+	</div>
+    <div class="col-md-5" id="map"></div></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 28.587608, lng: 77.166957};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAvYPJPMJbPiUwWAAoeIdQWN9PJhwO5eg&callback=initMap">
+    </script>
+	<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 
-<div class="left" id="remove">
-<img src="imgs/ad_bang-unmin.png" width="200" height="100%" />
+  </body>
+</html>
 
-</div><!-- comment to close gap
---><div class="right" id="remove">
-<img src="imgs/ad_satya-unmin.png" width="200" height="100%" />
-</div>
-
-</div>
-<div id="center">
-
-<div class="left" id="removetext">
-<p>sgsdgs</p>
-</div><!-- comment to close gap
---><div class="right" id="removetext2">
-<p>sgsdgs</p>
-</div>
-
-</div>
 <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

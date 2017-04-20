@@ -58,7 +58,10 @@ color:white;}
 	
 	
 }
-
+#leftside{
+	color:white;
+font-size:14px;
+}
 .img-square{
 	 position: absolute;
   left:0;
@@ -69,7 +72,7 @@ color:white;}
 
 .mycontainer{
   position: relative;
-  background-color: black;
+  
 }
 .mycontainer .col-lg-4{
     height: 250px;
