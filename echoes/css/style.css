@@ -203,6 +203,17 @@ font-family: 'Ubuntu', sans-serif;
     right: 60px;
 
 }
+
+
+#top {
+    font-family: "echoes_font";
+    font-size: 800%;
+    text-align: center;
+    margin-top: 50px;
+
+	
+}
+
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
