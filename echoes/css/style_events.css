@@ -3,11 +3,8 @@
     src: url("../fonts/font.ttf") ;
 }
 body{
-    background: url('../imgs/website-creative.jpg') no-repeat center fixed;
-     -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background: url('../imgs/pink_dust.png') ;
+     
 }
 #head {
         margin-top: 60px;
@@ -18,10 +15,18 @@ body{
     background: rgba(34, 34, 34, 0.5);
 
 }
-#event-component{
+.event-component{
     margin-top: 60px;
     background: #e3e3e3;
     min-height: 450px;
+}
+.second{
+        margin-bottom: 60px;
+
+}
+
+#sec{
+    min-height: 400px;
 }
 #img-component{
     min-height:200px;
@@ -29,6 +34,13 @@ body{
 }
 .waffle{
       background:url('../events/imgs/waffle.jpg') no-repeat center;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.wheel{
+      background:url('../events/imgs/wheel.png') no-repeat center;
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
