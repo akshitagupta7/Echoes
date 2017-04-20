@@ -1,5 +1,8 @@
 <html>
     <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style_waffle.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
@@ -16,6 +19,8 @@
   ga('send', 'pageview');
 
 </script>
+
+
 	
     </head>
 
@@ -35,22 +40,38 @@
 
 <div class="v-wrap">
     <article class="v-box">
-        <h1>Spinner Wheel</h1>
+        <h1>Spin A Wheel</h1>
 
         <p>Register below with your phone number and email id</p>
-<form class="form-inline" action="encryption.php" method="post">
+<form class="form-inline" action="log.php" method="post">
   <div class="form-group">
     <label for="exampleInputName2">Name</label>
-    <input type="text" class="form-control" id="InputName" placeholder="Jane Doe" name="name">
+    <input type="text" class="form-control" id="InputName" placeholder="Jane Doe" name="name" data-validation="length alphanumeric" data-validation-length="min2">
   </div>
   
   <div class="form-group">
     <label for="exampleInputEmail2">Phone Number</label>
-    <input type="number" class="form-control" id="InputPhone" placeholder="9999999999" name="number" size="10" pattern=".{9}">
+    <input type="number" class="form-control" id="InputPhone" placeholder="9999999999" name="number" size="10" data-validation="number length" data-validation-length="10">
   </div>
+  <div class="checkbox">
+  <label><input type="checkbox" value="" class="checkbox" id="agree" name="agree" required></label>
+  <label for="agree" class="error block">Agree to our Terms!</label>
+
+</div>
+  
   <button type="submit" class="btn btn-default">Send Coupon</button>
 </form>
     </article>
 </div>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+<script>
+  $.validate({
+    lang: 'en'
+  });
+</script>
+
     </body>
 </html>
