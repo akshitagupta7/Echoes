@@ -1,0 +1,39 @@
+body{
+    background: url('../imgs/website-creative.png') no-repeat center fixed;
+     -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#head{
+    font-family: 'Montserrat', sans-serif;
+text-align: center;
+vertical-align:auto;
+}
+.v-wrap{
+    height: 100%;
+    white-space: nowrap;
+    text-align: center;
+    
+}
+.v-wrap:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    /* adjust for white space between pseudo element and next sibling */
+    margin-right: -.25em;
+    /* stretch line height */
+    height: 100%; 
+}
+.v-box{
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    background: rgba(34, 34, 34, 0.5);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 25px;
+}
