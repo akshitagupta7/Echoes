@@ -34,5 +34,8 @@ img {
                 filter: none; /* IE6-9 */
                 -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
                 mouse:pointer;
+				  -webkit-transition: color 1s; /* Safari */
+    transition: color 1s;
+
             }
 
