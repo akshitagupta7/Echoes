@@ -102,9 +102,7 @@ html, body, #info, #stage{
     height: 250px;
 }
 
-#mycarousel h3 {
- 
-}
+
 
 .full-screen {
   background-size: cover;
@@ -126,8 +124,8 @@ html, body, #info, #stage{
     min-height: 500px;
     background-color: #e3e3e3;
 } */
-
-    background: url('../imgs/eee.png');
+.footer{
+    background: url('../imgs/eee.png');}
     /*color: white;*/
 }
 #head_foot{
@@ -169,6 +167,7 @@ html, body, #info, #stage{
     padding-bottom: 50px;
     color: black;
 font-family: 'Ubuntu', sans-serif;
+
 
 }
 
