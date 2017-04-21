@@ -47,6 +47,8 @@ margin:auto;}
 
 h1,h4{font-family: 'Pacifico', cursive; }
 
+#map{height:500px;width:41%}
+
 
 
 #format{
@@ -59,3 +61,5 @@ h1,h4{font-family: 'Pacifico', cursive; }
 	margin-top:100px;
 	
 }
+
+@media only screen and (max-width: 480px){#top_new{font-size:480%;font-weight:900}}@media only screen and (max-width: 1024px){#map{height:500px;width:90%}}

@@ -38,4 +38,17 @@ img {
     transition: color 1s;
 
             }
+			
+@media only screen and (max-width: 486px){
+	#top{
+		font-size: 80%;
+    margin-top: 60px;}
+		}
+
+@media only screen and (max-width: 1024px)
+{
+	#top{font-size:500%}
+	}
+	
+
 
