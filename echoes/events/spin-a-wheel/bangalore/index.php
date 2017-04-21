@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style_waffle.css" rel="stylesheet">
+        <link href="../css/style_waffle.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 <!-- Latest compiled and minified CSS -->
@@ -47,8 +47,8 @@
     <article class="v-box">
         <h1><span style="font-family: 'Kalam', cursive">#चिल्ल</span><span style="font-family: 'Rubik Mono One', sans-serif"">the</span><span style="font-family: 'Kalam', cursive">वील</span></h1>
 
-        <p>Register below with your phone number </p>
-<form class="form-inline" action="log.php" method="post" id="myform">
+        <p>Register below with your phone number</p>
+<form class="form-inline" action="data_send.php" method="post" id="myform">
   <div class="form-group">
     <label for="exampleInputName2">Name</label>
     <input type="text" class="form-control" id="InputName" placeholder="Jane Doe" name="name" data-validation="length alphanumeric" data-validation-length="min2" >

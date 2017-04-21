@@ -31,8 +31,8 @@ mysql_select_db($dbname);
 	 $formatdate = date("d-m-Y", strtotime($newdate));
 
 
-
-$api_key = '458F7890E79C0E';
+$api_key=00;
+//$api_key = '458F7890E79C0E';
 $contacts = $num;
 $from = 'ECHOES';
 $sms_text = urlencode('Echoes welcomes you to redeem code : '.$coupon.' for offer : '.$offer.' Visit Now! T&C apply #EEE Offer valid till'. $formatdate );
@@ -47,6 +47,7 @@ curl_close($ch);
 if($response){echo "sms sent";}
 }
 else{echo "FAIL";}
+
 
 }
 ?>
