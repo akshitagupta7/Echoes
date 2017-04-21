@@ -70,6 +70,15 @@ function is_mobile() {
            <li><a href="team.html">Our Team</a></li>
 			<li ><a href="events.html">Events</a></li>
 			<li><a href="news.html">News</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact Us
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="contact-us/satyaniketan.html">Satya Niketan</a></li>
+          <li><a href="contact-us/bangalore.html">Bangalore</a></li>
+        </ul>
+      </li>
+     
 			 
            
           </ul>
@@ -147,15 +156,25 @@ function is_mobile() {
 
        
         <div class="col-lg-4 col-sm-4">
-		<a href="photogallery_korma.html">
-          <img class="img-square" src="imgs/ad_bang.png" alt="Generic  image" width=100% "></a>
+      <div class=" oie">
+          <img class="img-square image" src="imgs/ad_bang.png" alt="Generic  image" width=100% ">
+  <div class="middle">
+    <div class="text">		<a href="photogallery_korma.html">View Gallery</a></div>
+  </div>
+</div>
           
 		  <span id="mytext"><h2 id="mylead"></h2><br>
           <p></p></span><!-- format mylead class according to the images-->
 
         </div>
-        <div class="col-lg-4 col-sm-4"><a href="photogallery_satya.html">
-          <img class="img-square" src="imgs/ad_satya.png" alt="Generic placeholder image" width=100% ></a>
+        <div class="col-lg-4 col-sm-4">
+            <div class=" oie">
+          <img class="img-square image" src="imgs/ad_satya.png" alt="Generic placeholder image" width=100% >
+  <div class="middle">
+    <div class="text">		<a href="photogallery_satya.html">View Gallery</a></div>
+  </div>
+</div>
+         
           <span id="mytext"><h2 id="mylead"></h2><br>
           <p></p></span>
         </div>
@@ -212,11 +231,9 @@ So far Echoes has made all the right sounds and has been accepted and appreciate
       <i class="fa fa-facebook" id="fb" aria-hidden="true"></i>
       <i class="fa fa-instagram" id="insta" aria-hidden="true"></i>
 
-
-	  
-	
     </div>
 
+ 
 
    
 
@@ -255,51 +272,7 @@ So far Echoes has made all the right sounds and has been accepted and appreciate
   } );
 
   </script>
-<!--location-->
-<script>
-  var apiGeolocationSuccess = function(position) {
-    console.log("API geolocation success!\n\nlat = " + position.coords.latitude + "\nlng = " + position.coords.longitude);
-};
 
-var tryAPIGeolocation = function() {
-    jQuery.post( "https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyDnGio-Pp5T8redQYawE4PBjNRT3VQ5P5M", function(success) {
-        apiGeolocationSuccess({coords: {latitude: success.location.lat, longitude: success.location.lng}});
-  })
-  .fail(function(err) {
-    console.log("API Geolocation error! \n\n"+err);
-  });
-};
-
-var browserGeolocationSuccess = function(position) {
-    console.log("Browser geolocation success!\n\nlat = " + position.coords.latitude + "\nlng = " + position.coords.longitude);
-};
-
-var browserGeolocationFail = function(error) {
-  switch (error.code) {
-    case error.TIMEOUT:
-      console.log("Browser geolocation error !\n\nTimeout.");
-      break;
-    case error.PERMISSION_DENIED:
-      if(error.message.indexOf("Only secure origins are allowed") == 0) {
-        tryAPIGeolocation();
-      }
-      break;
-    case error.POSITION_UNAVAILABLE:
-      console.log("Browser geolocation error !\n\nPosition unavailable.");
-      break;
-  }
-};
-
-var tryGeolocation = function() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(
-        browserGeolocationSuccess,
-      browserGeolocationFail,
-      {maximumAge: 50000, timeout: 20000, enableHighAccuracy: true});
-  }
-};
-
-tryGeolocation();
 </script>
 
 
