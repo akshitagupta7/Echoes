@@ -1,0 +1,1 @@
+<?php echo "Registrations monday onwards"?>
