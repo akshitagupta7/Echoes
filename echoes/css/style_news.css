@@ -9,11 +9,7 @@
 	color:#C5D2D6;
 }
 body{
-   background: url('../imgs/footer.png') no-repeat center fixed;
-     -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+   background: url('../imgs/footer.png');
 }
 
 .well{

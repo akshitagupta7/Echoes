@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['name'])&&isset($_POST['number'])){
-$name=$_POST['name'];
-$num=$_POST['number'];
+ $name= ($_POST['name']);
+ $num= ($_POST['number']);
 $hostname="localhost";
 	$username="echoes";
 	$password="stargazer";
@@ -34,12 +34,29 @@ $hostname="localhost";
 	 else if($number>=85&&$number<=100){
 		 $prize=10;
 	 }
-	 $query="INSERT INTO $usertable(name,phone,prize) VALUES('$name','$num','$prize')";
+	 
+	 
+	 function getToken($length)
+	{
+    $token = "";
+    $codeAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    $codeAlphabet.= "0123456789";
+    $max = strlen($codeAlphabet); // edited
+
+    for ($i=0; $i < $length; $i++) {
+        $token .= $codeAlphabet[rand(0, $max-1)];
+    }
+
+    return $token;
+	}
+$token=getToken(6);
+
+	 $query="INSERT INTO $usertable(name,phone,prize,couponcode) VALUES('$name','$num','$prize','$token')";
 	 $query2="SELECT * FROM $usertable WHERE phone='$num'";
 	 mysql_select_db($dbname);   
  	$result2=mysql_query($query2);
  	if($result2 && mysql_num_rows($result2) > 0){
-		header('Location: http://echoes.stargazer.co.in/events/waffle.php?tag=fail'); 	
+		header('Location: http://echoes.stargazer.co.in/events/spin-a-wheel/index.php?tag=fail'); 	
 		}
  	else{
  	$result = mysql_query($query);

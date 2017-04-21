@@ -35,7 +35,7 @@ h1, p
 font-family: 'Rubik Mono One', sans-serif;
 }
 .head{
-height:100px;
+height:50px;
 background-color:#D20016;
 }
 div.power_controls
@@ -103,3 +103,30 @@ td.pw3
     padding: 5px;
     text-align: left;
 }
+#second{
+position:fixed;
+top:10%;
+right:10%;
+left:10%;
+bottom:10%;
+background-color:rgba(227,227,227,0.8);
+height:80%;
+width:80%;
+}
+
+#text_winning{
+
+font-family: 'Concert One', cursive;
+text-align: center;
+width:80%;
+font-size:2em;
+}
+
+#second h1{
+text-align:center;
+font-size:3em;
+font-family: 'Concert One', cursive;
+
+}
+
+

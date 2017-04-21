@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['name'])&&isset($_POST['number'])){
-$name=$_POST['name'];
-$num=$_POST['number'];
+echo $name=mysql_real_escape_string($_POST['name']);
+echo $num=mysql_real_escape_string($_POST['number']);
 $hostname="localhost";
 	$username="echoes";
 	$password="stargazer";
@@ -34,7 +34,7 @@ $hostname="localhost";
 	 else if($number>=85&&$number<=100){
 		 $prize=10;
 	 }
-	 $query="INSERT INTO $usertable(name,phone,prize) VALUES('$name','$num','$prize')";
+	 $query="INSERT INTO $usertable(name,phone,prize,couponcode) VALUES('$name','$num','$prize','ss')";
 	 $query2="SELECT * FROM $usertable WHERE phone='$num'";
 	 mysql_select_db($dbname);   
  	$result2=mysql_query($query2);
@@ -47,7 +47,7 @@ $hostname="localhost";
 	 $_SESSION["name"] = $name;
 	 $_SESSION["number"]=$num;
 	
-	     header('Location: wheel.php');
+	    // header('Location: wheel.php');
 	     }
 
 	
