@@ -217,6 +217,60 @@ font-family: 'Ubuntu', sans-serif;
 	
 }
 
+#info{
+    position: fixed;
+    height:100px;
+    width: 400px;
+    top: 100px;
+    right: 0px;
+    background-color: blue;
+}
+
+.oie {
+    position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 200%);
+  -ms-transform: translate(-50%, 200%)
+}
+
+.oie:hover .image {
+  opacity: 0.3;
+}
+
+.oie:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #000;
+  color: white;
+  font-size: 16px;
+  padding: 16px 16px;
+}
+.text a{
+    color: white;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+}
+.text a:hover{
+    color: #e3e3e3;
+}
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
