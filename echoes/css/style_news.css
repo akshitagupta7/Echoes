@@ -6,9 +6,10 @@
     font-family: 'echoes_font';
     text-align: center;
     font-size: 800%;
+	color:#C5D2D6;
 }
 body{
-   background: url('../Image_Echoes/black_star.png') no-repeat center fixed;
+   background: url('../imgs/footer.png') no-repeat center fixed;
      -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -85,11 +86,4 @@ p{
 	padding:3px;
 	font-family: 'Amaranth', sans-serif;
 	font-size:15px;
-}
-h1 {
-font-family: 'Rubik Mono One', sans-serif;
-text-align:center;
-font-size:100px;
-font-style:bold;
-color:#C5D2D6;
 }
