@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['name'])&&isset($_POST['number'])){
-$name=$_POST['name'];
-$num=$_POST['number'];
+echo $name=mysql_real_escape_string($_POST['name']);
+echo $num=mysql_real_escape_string($_POST['number']);
 $hostname="localhost";
 	$username="echoes";
 	$password="stargazer";

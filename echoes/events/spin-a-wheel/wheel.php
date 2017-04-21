@@ -1,20 +1,45 @@
-
 <html>
     <head>
-        <title>HTML5 Canvas Winning Wheel</title>
+        <title>Chill The Wheel</title>
         <link rel="stylesheet" href="main.css" type="text/css" />
         <script type="text/javascript" src="js/Winwheel.js"></script>
         <script src="js/TweenMax.js"></script>
+ <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
 
+
+<meta property="og:url" content="http://www.echoes.stargazer.co.in/" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Echoes" />
+  <meta property="og:description"   content="Here is the description" />
+  <meta property="og:image"         content="http://echoes.stargazer.co.in/events/spin-a-wheel/imgs/fb.png" />
+
+<link href="https://fonts.googleapis.com/css?family=Concert+One|Kalam|Permanent+Marker" rel="stylesheet">
+<!--Google Analytics Code-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-97624630-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!--Ends Here-->
     </head>
     <body>
       <?php
 	 session_start();
 	 if(isset($_SESSION['name'])){
 
-   $num=$_SESSION['number'];
-    $name=$_SESSION['name'];
+   $num= ($_SESSION['number']);
+    $name= ($_SESSION['name']);
   
 	    $hostname="localhost";
 	$username="echoes";
@@ -75,8 +100,29 @@
     
         
     ?>
-    <div class="head"><h1 id="lol" style="font-family: 'Rubik Mono One', sans-serif">Spin A wheel</h1></div>
-        <div align="center">
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1559578257399904',
+      xfbml      : true,
+      version    : 'v2.9'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+    
+    
+    
+    <div class="head"><h1 id="lol" style="><span style="font-family: 'Kalam', cursive">#चिल्ल</span><span style="font-family: 'Rubik Mono One', sans-serif"">the</span><span style="font-family: 'Kalam', cursive">वील</span></h1></div>
+        <div align="center" id="first">
           
             <table cellpadding="0" cellspacing="0" border="0">
             <tr>
@@ -147,8 +193,13 @@
                 </td>
             </tr>
         </table>
+         
+ 
         <script>
+        
+        
             // Create new wheel object specifying the parameters at creation time.
+            
                 var theWheel = new Winwheel({
                 'numSegments'       : 10,                // Specify number of segments.
                 'outerRadius'       : 390,              // Set outer radius so wheel fits inside the background.
@@ -246,8 +297,56 @@
                 var winningSegment = theWheel.getIndicatedSegment();
 
                 // Do basic alert of the segment text. You would probably want to do something more interesting with this information.
-                alert(winningSegment.text + ' says Hi');
+                               // $('#first').hide();
+                                $('#second').show();
+                                var t=2*winningSegment.text;
+                                	var offered=$('tbody tr td')[t].textContent;
+                                	if(winningSegment.text==5||winningSegment.text==10){$('#text_winning').hide();}
+                              $("#second h1").text($('tbody tr td')[t].textContent);
+                              
+	$.post("dmg.php",{
+		number: "<?php echo $num;?>",
+		offer: offered
+		},
+		function(data,status){
+		console.log("data"+data);
+		});   
+                              
+
+
             }
+            
+            
         </script>
+        </div>
+        <div id="second">
+        <div class="container">
+        <h1 style="
+text-align:center,
+font-size:3em
+">Winning prize</h1><br><p id="text_winning">You gave it a spin, and ultimately came up with a win. Your SMS Coupon has been released. You can redeem the same at Echoes Satya Niketan/Koramangala.Share your happiness with your friends.Happy Spinning and Winning!</p>
+        
+        <br>
+     <img id="shareBtn" src="imgs/share.png" width="150px">
+  </div>
+        </div>
+        </div>
+        
+        <script>                                $('#second').hide();
+</script>
+<script>
+document.getElementById('shareBtn').onclick = function() {
+  FB.ui({
+    method: 'feed',
+    display: 'popup',
+    hasthag : 'EEE',
+    href: 'https://echoes.stargazer.co.in/events.html',
+        picture: 'http://echoes.stargazer.co.in/events/spin-a-wheel/imgs/fb.png',
+        name: "Title this is",
+        description: "this is the desc",
+        caption: "final caption"
+  }, function(response){});
+}
+</script>
     </body>
 </html>
