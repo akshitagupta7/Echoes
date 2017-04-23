@@ -1,0 +1,134 @@
+[22-Apr-2017 13:11:28 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 9
+[22-Apr-2017 13:11:46 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 9
+[22-Apr-2017 14:47:36 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 9
+[22-Apr-2017 14:49:02 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 9
+[22-Apr-2017 15:00:44 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app_satya.php on line 9
+[22-Apr-2017 15:01:59 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app_satya.php on line 9
+[22-Apr-2017 15:01:59 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app_satya.php on line 9
+[22-Apr-2017 15:02:26 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app_satya.php on line 9
+[22-Apr-2017 15:02:27 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app_satya.php on line 9
+[22-Apr-2017 15:02:28 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app_satya.php on line 9
+[22-Apr-2017 15:02:28 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app_satya.php on line 9
+[22-Apr-2017 15:02:29 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app_satya.php on line 9
+[22-Apr-2017 15:02:30 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app_satya.php on line 9
+[22-Apr-2017 15:02:31 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app_satya.php on line 9
+[22-Apr-2017 15:02:34 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app_satya.php on line 9
+[22-Apr-2017 15:02:37 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app_satya.php on line 9
+[22-Apr-2017 15:03:14 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app_satya.php on line 9
+[22-Apr-2017 15:03:15 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app_satya.php on line 9
+[22-Apr-2017 15:03:40 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app_satya.php on line 9
+[22-Apr-2017 15:04:01 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app_satya.php on line 9
+[22-Apr-2017 15:04:01 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app_satya.php on line 9
+[22-Apr-2017 15:04:16 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 9
+[22-Apr-2017 15:05:05 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 9
+[22-Apr-2017 15:05:05 UTC] PHP Notice:  Undefined variable: date in /home/stargazers/public_html/echoes/app.php on line 14
+[22-Apr-2017 15:17:34 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/stargazers/public_html/echoes/app.php on line 17
+[22-Apr-2017 15:23:47 UTC] PHP Notice:  Undefined index: number in /home/stargazers/public_html/echoes/app.php on line 2
+[22-Apr-2017 15:23:47 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 9
+[22-Apr-2017 15:24:07 UTC] PHP Notice:  Undefined index: number in /home/stargazers/public_html/echoes/app.php on line 2
+[22-Apr-2017 15:24:07 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 10
+[22-Apr-2017 15:24:09 UTC] PHP Notice:  Undefined index: number in /home/stargazers/public_html/echoes/app.php on line 2
+[22-Apr-2017 15:24:09 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 10
+[22-Apr-2017 15:24:25 UTC] PHP Notice:  Undefined index: number in /home/stargazers/public_html/echoes/app.php on line 2
+[22-Apr-2017 15:24:25 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 10
+[22-Apr-2017 15:24:25 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 15
+[22-Apr-2017 15:24:53 UTC] PHP Notice:  Undefined index: number in /home/stargazers/public_html/echoes/app.php on line 2
+[22-Apr-2017 15:24:53 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 10
+[22-Apr-2017 15:24:53 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 15
+[22-Apr-2017 15:24:53 UTC] PHP Notice:  Undefined index: number in /home/stargazers/public_html/echoes/app.php on line 2
+[22-Apr-2017 15:24:53 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 10
+[22-Apr-2017 15:24:53 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 15
+[22-Apr-2017 15:25:24 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 9
+[22-Apr-2017 15:25:24 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 14
+[22-Apr-2017 15:35:54 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 15:35:54 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 15:36:20 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 15:36:20 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 15:48:13 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 15:48:13 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 15:48:42 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 15:48:42 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 16:46:48 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/subscribe.php on line 9
+[22-Apr-2017 17:13:53 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/subscribe.php on line 9
+[22-Apr-2017 17:14:49 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/subscribe.php on line 9
+[22-Apr-2017 17:23:29 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/subscribe.php on line 9
+[22-Apr-2017 17:25:36 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/subscribe.php on line 9
+[22-Apr-2017 17:33:12 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 17:33:12 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 17:33:28 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 17:33:37 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 17:33:37 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 17:33:41 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/stargazers/public_html/echoes/redeem.php on line 16
+[22-Apr-2017 17:34:35 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/stargazers/public_html/echoes/redeem.php on line 16
+[22-Apr-2017 17:34:51 UTC] PHP Notice:  Undefined index: branch in /home/stargazers/public_html/echoes/app.php on line 3
+[22-Apr-2017 17:34:51 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 17:34:51 UTC] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/stargazers/public_html/echoes/app.php on line 15
+[22-Apr-2017 17:35:12 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 17:35:12 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 17:35:34 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/stargazers/public_html/echoes/redeem.php on line 16
+[22-Apr-2017 17:35:54 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/redeem.php on line 11
+[22-Apr-2017 17:36:08 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/redeem.php on line 11
+[22-Apr-2017 17:36:35 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/redeem.php on line 11
+[22-Apr-2017 17:36:54 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/redeem.php on line 11
+[22-Apr-2017 17:37:05 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/redeem.php on line 11
+[22-Apr-2017 17:37:19 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/redeem.php on line 11
+[22-Apr-2017 17:37:25 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/redeem.php on line 11
+[22-Apr-2017 17:37:27 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/redeem.php on line 11
+[22-Apr-2017 17:37:28 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/redeem.php on line 11
+[22-Apr-2017 17:37:48 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 17:37:48 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 17:37:49 UTC] PHP Notice:  Undefined index: branch in /home/stargazers/public_html/echoes/redeem.php on line 3
+[22-Apr-2017 17:37:49 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/redeem.php on line 11
+[22-Apr-2017 17:37:51 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 17:37:51 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 17:37:52 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 17:37:52 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 17:37:53 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 17:37:53 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 17:38:28 UTC] PHP Notice:  Undefined index: branch in /home/stargazers/public_html/echoes/redeem.php on line 3
+[22-Apr-2017 17:38:28 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/redeem.php on line 11
+[22-Apr-2017 17:38:36 UTC] PHP Notice:  Undefined index: branch in /home/stargazers/public_html/echoes/redeem.php on line 3
+[22-Apr-2017 17:38:36 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/redeem.php on line 11
+[22-Apr-2017 17:40:08 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 17:40:08 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 17:40:12 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/redeem.php on line 11
+[22-Apr-2017 17:40:13 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 17:40:13 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 17:41:44 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 17:41:44 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 17:41:58 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/redeem.php on line 11
+[22-Apr-2017 17:48:29 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 17:48:29 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 17:48:40 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 17:48:40 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 17:49:34 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 17:49:34 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 17:50:56 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 17:50:56 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 17:53:49 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 17:53:49 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 17:54:14 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 17:54:14 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 17:54:15 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 17:54:15 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 17:54:17 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/redeem.php on line 11
+[22-Apr-2017 17:54:19 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 17:54:19 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 17:54:28 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 17:54:28 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 17:55:47 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 17:55:47 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 18:02:42 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 18:02:42 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 18:04:32 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 18:04:32 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[22-Apr-2017 18:04:35 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/redeem.php on line 11
+[22-Apr-2017 18:04:37 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[22-Apr-2017 18:04:37 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[23-Apr-2017 12:17:56 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/subscribe.php on line 9
+[23-Apr-2017 12:18:08 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/subscribe.php on line 9
+[23-Apr-2017 12:20:57 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/app.php on line 11
+[23-Apr-2017 12:20:57 UTC] PHP Notice:  Undefined index: DATE(TIMESTAMP) in /home/stargazers/public_html/echoes/app.php on line 16
+[23-Apr-2017 12:22:27 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/subscribe.php on line 9
+[23-Apr-2017 13:47:09 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/subscribe.php on line 9
+[23-Apr-2017 16:07:13 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/stargazers/public_html/echoes/subscribe.php on line 9

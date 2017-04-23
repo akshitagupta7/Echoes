@@ -13,27 +13,29 @@ $hostname="localhost";
 	 if($number>=0&&$number<=25){
 		 $prize=1;
 	 }
-	 else if($number>=25&&$number<=40){
+	 else if($number>25&&$number<=40){
 		 $prize=2;
 	 }
-	 else if($number>=40&&$number<=45){
+	 else if($number>40&&$number<=45){
 		 $prize=3;
 	 }
-	 else if($number>=45&&$number<=55){
+	 else if($number>45&&$number<=55){
 		 $prize=5;
 	 }
-	 else if($number>=55&&$number<=60){
+	 else if($number>55&&$number<=60){
 		 $prize=6;
 	 }
-	 else if($number>=60&&$number<=75){
+	 else if($number>60&&$number<=75){
 		 $prize=8;
 	 }
-	 else if($number>=75&&$number<=85){
+	 else if($number>75&&$number<=85){
 		 $prize=9;
 	 }
-	 else if($number>=85&&$number<=100){
+	 else if($number>85&&$number<=100){
 		 $prize=10;
 	 }
+	 else{
+	 $prize=10;}
 	 
 	 
 	 function getToken($length)

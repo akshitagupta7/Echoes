@@ -64,4 +64,15 @@ display: block;
 
 }
 
-@media only screen and (max-width: 480px){#head{font-size:600%}}
+@media only screen and (max-width: 480px){#head{font-size:600%}
+.h2, h2 {
+    font-size: 25px;
+}
+
+}
+@media only screen and (max-width: 380px){
+.h2, h2{
+font-size:20px;}
+#head{
+font-size:400%;}
+}

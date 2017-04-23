@@ -10,12 +10,14 @@
   crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
 
+<meta name=”description” content=”Gamify your food cravings, and seize the opportunity to win some fingerlicious delicacies now! Spin some, win some!”>
 
 <meta property="og:url" content="http://www.echoes.stargazer.co.in/" />
   <meta property="og:type"          content="website" />
   <meta property="og:title"         content="Echoes" />
-  <meta property="og:description"   content="Here is the description" />
+  <meta property="og:description"   content="Gamify your food cravings, and seize the opportunity to win some fingerlicious delicacies now! Spin some, win some!" />
   <meta property="og:image"         content="http://echoes.stargazer.co.in/events/spin-a-wheel/imgs/fb.png" />
+    <link rel="icon" href="../../../imgs/favicon.ico">
 
 <link href="https://fonts.googleapis.com/css?family=Concert+One|Kalam|Permanent+Marker" rel="stylesheet">
 <!--Google Analytics Code-->
@@ -32,8 +34,31 @@
 </script>
 
 <!--Ends Here-->
+
+
+
+
     </head>
     <body>
+    
+    <!-- Google Code for Brand Awareness Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 876506009;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "5FlpCPL9zXAQmdf5oQM";
+var google_remarketing_only = false;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/876506009/?label=5FlpCPL9zXAQmdf5oQM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
       <?php
 	 session_start();
 	 if(isset($_SESSION['name'])){
@@ -127,7 +152,7 @@
             <table cellpadding="0" cellspacing="0" border="0">
             <tr>
                 <td>
-                    <div class="">                        <h2 id="lol" style="font-family: 'Rubik Mono One', sans-serif">Try your luck</h2>
+                    <div class="">                        <h2 id="lol" style="font-family: 'Rubik Mono One', sans-serif">Try your luck</h2><p>Please Refresh if images haven't loaded on the wheel</p>
 
                         <br />
                         <br />
@@ -304,7 +329,7 @@
                                 	if(winningSegment.text==5||winningSegment.text==10){$('#text_winning').hide();}
                               $("#second h1").text($('tbody tr td')[t].textContent);
                               
-	$.post("../dmg.php",{
+	$.post("dmg.php",{
 		number: "<?php echo $num;?>",
 		offer: offered
 		},
@@ -324,11 +349,13 @@
         <h1 style="
 text-align:center,
 font-size:3em
-">Winning prize</h1><br><p id="text_winning">You gave it a spin, and ultimately came up with a win. Your SMS Coupon has been released. You can redeem the same at Echoes Satya Niketan/Koramangala.Share your happiness with your friends.Happy Spinning and Winning!</p>
+">Winning prize</h1><br><p id="text_winning">You gave it a spin, and ultimately came up with a win. Your SMS Coupon has been released. You can redeem the same at Echoes Koramangala.Share your happiness with your friends.Happy Spinning and Winning!<br><br>For Echoes Satyaniketan <a href="http://echoes.stargazer.co.in/events.spin-a-wheel">click here</a><br><br><a href="http://www.echoes.stargazer.co.in">Home</a></p>
         
         <br>
-     <img id="shareBtn" src="../imgs/share.png" width="150px">
-  </div>
+ <div class="fb-share-button" 
+    data-href="http://www.echoes.stargazer.co.in/events/spin-a-wheel/bangalore" 
+    data-layout="button_count">
+  </div>  </div>
         </div>
         </div>
         
@@ -340,7 +367,7 @@ document.getElementById('shareBtn').onclick = function() {
     method: 'feed',
     display: 'popup',
     hasthag : 'EEE',
-    href: 'https://echoes.stargazer.co.in/events.html',
+    href: 'http://echoes.stargazer.co.in/events.html',
         picture: 'http://echoes.stargazer.co.in/events/spin-a-wheel/imgs/fb.png',
         name: "Title this is",
         description: "this is the desc",

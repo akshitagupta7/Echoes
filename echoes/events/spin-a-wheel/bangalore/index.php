@@ -5,7 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="../css/style_waffle.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="icon" href="../../../imgs/favicon.ico">
+        <title>Chill The Wheel: Get amazing food coupons at Echoes</title>
+<meta name=”description” content=”Gamify your food cravings, and seize the opportunity to win some fingerlicious delicacies now! Spin some, win some!”>
 
+<meta property="og:url" content="http://www.echoes.stargazer.co.in/" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Echoes" />
+  <meta property="og:description"   content="Gamify your food cravings, and seize the opportunity to win some fingerlicious delicacies now! Spin some, win some!" />
+  <meta property="og:image"         content="http://echoes.stargazer.co.in/events/spin-a-wheel/imgs/fb.png" />
+    <link rel="icon" href="../../../imgs/favicon.ico">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Concert+One|Kalam|Permanent+Marker" rel="stylesheet">
@@ -51,7 +60,7 @@
 <form class="form-inline" action="data_send.php" method="post" id="myform">
   <div class="form-group">
     <label for="exampleInputName2">Name</label>
-    <input type="text" class="form-control" id="InputName" placeholder="Jane Doe" name="name" data-validation="length alphanumeric" data-validation-length="min2" >
+    <input type="text" class="form-control" id="InputName" placeholder="Jane Doe" pattern="[a-zA-Z][a-zA-Z0-9\s]*" name="name" data-validation="length" data-validation-length="min2" >
   </div>
   
   <div class="form-group">
@@ -65,10 +74,11 @@
 
 </div>
   
-  <button type="submit" class="btn btn-default">Send Coupon</button>
+  <button type="submit" class="btn btn-default">Register Now</button>
 </form>Terms and conditions for #चिल्लtheवील<br>
 1. Cannot be clubbed with any other offer.<br>
-2. Only valid from Monday to Friday.<br>
+2. Offers can be Redeemed from 24th April, Monday.<br>
+3. Only valid from Monday to Friday.<br>
     </article>
 </div>
 

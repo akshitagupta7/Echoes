@@ -10,9 +10,12 @@
     transition: color 0.5s;
   }
   #nava{
-            background: rgba(34, 34, 34, 0.8);
+            background: rgba(10, 10, 10, 0.8);
             margin-top: 0px;
   }
+  .navbar-inverse .navbar-nav>li>a {
+    color: #bcbcbc;
+}
   .container .navbar {
       margin:0;
   }
@@ -20,6 +23,8 @@
       margin: 0;
       top:0;
   }
+  .navbar-brand{
+  font-family:echoes_font;}
   
 body{
     margin:0;
@@ -146,7 +151,7 @@ html, body, #info, #stage{
 }
 #lower_footer{
     padding: 30px;
-    background:url('../imgs/footer.png');
+    background:url('../imgs/footer_lodyas.png');
 }
 
 #footer_head{
